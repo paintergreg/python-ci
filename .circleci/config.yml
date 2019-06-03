@@ -36,4 +36,4 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            - nosetests test/math-test.py
+            nosetests test/math-test.py

@@ -38,4 +38,5 @@ jobs:
             . venv/bin/activate
             nosetests test/math-test.py
             coverage run src/*.py && coverage report
+            coveralls
 

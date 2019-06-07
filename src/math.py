@@ -14,8 +14,10 @@ docstring goes here.  be sure to write a good one ;)
 
 class Math:
     def addition(value1: int, value2: int) -> int:
-        if not isinstance(value1, int) or not isinstance(value2, int):
-            return "Invalid Input"
+        if not isinstance(value1, int):
+            return "value1 Invalid Input"
+        elif not isinstance(value2, int):
+            return "value2 Invalid Input"
         else:
             return value1 + value2
 

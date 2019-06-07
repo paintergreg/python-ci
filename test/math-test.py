@@ -20,16 +20,16 @@ class MathTest(unittest.TestCase):
         self.assertEqual(Math.addition(3, 4), 7)
 
     def test_invalid_add_value1(self):
-        self.assertEqual(Math.addition("A", 3), "Invalid Input")
+        self.assertEqual(Math.addition("A", 3), "value1 Invalid Input")
 
     def test_invalid_add_value2(self):
-        self.assertEqual(Math.addition(3, "A"), "Invalid Input")
+        self.assertEqual(Math.addition(2, "A"), "value2 Invalid Input")
 
     def test_subtraction(self):
         self.assertEqual(Math.subtraction(12, 4), 8)
 
     def test_invalid_sub_value1(self):
-        self.assertEqual(Math.subtraction("A", 3), "Invalid Input")
+        self.assertEqual(Math.subtraction("A", "A"), "Invalid Input")
 
     def test_invalid_sub_value2(self):
-        self.assertEqual(Math.subtraction(3, "A"), "Invalid Input")
+        self.assertEqual(Math.subtraction("A", "A"), "Invalid Input")

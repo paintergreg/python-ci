@@ -18,3 +18,9 @@ class Math:
             return "Invalid Input"
         else:
             return value1 + value2
+
+    def subtraction(value1: int, value2: int) -> int:
+        if not isinstance(value1, int) or not isinstance(value2, int):
+            return "Invalid Input"
+        else:
+            return value1 - value2
